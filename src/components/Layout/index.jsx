@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <Sidebar />
       <div
         style={{ flexGrow: "1", backgroundColor: "gray" }}
-        className="container pa-5"
+        className="container"
       >
         {children}
       </div>

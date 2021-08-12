@@ -3,7 +3,9 @@ import { Menu, Typography } from "antd";
 import { MailOutlined, CalendarOutlined } from "@ant-design/icons";
 import { navigation } from "./../../utils/navigation";
 import { Link } from "react-router-dom";
-
+import Avatar from "antd/lib/avatar/avatar";
+import { ArrowRightOutlined } from "@ant-design/icons";
+import Text from "antd/lib/typography/Text";
 const SideBar = () => {
   const handleClick = (e) => {
     console.log("click ", e);
@@ -54,6 +56,19 @@ const SideBar = () => {
         <Menu.Item key="8" icon={<CalendarOutlined />}>
           Account Settings
         </Menu.Item>
+        <div className="d-flex side-bar-logo">
+          <div>
+            <Avatar style={{ color: "#ffffff", backgroundColor: "#dcdc56" }}>
+              RJ
+            </Avatar>
+          </div>
+          <div className="side-bar-logo-text">
+            <Text>Rishabh Jain</Text>
+          </div>
+          <div className="side-bar-logo-button">
+            <ArrowRightOutlined />
+          </div>
+        </div>
       </Menu>
     </div>
   );
