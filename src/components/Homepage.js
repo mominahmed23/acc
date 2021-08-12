@@ -6,8 +6,8 @@ export default function Homepage() {
     return (
         <div>
             <Row>
-                <Col lg={5} md={12} sm={24}><Sidebar /></Col>
-                <Col lg={12} md={12} sm={24}><Navbar /> </Col>
+                <Col lg={5} ><Sidebar /></Col>
+                <Col lg={19} md={19} sm={19}><Navbar /> </Col>
             </Row>
         </div>
     )
