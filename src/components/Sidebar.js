@@ -52,9 +52,11 @@ export default function Sidebar() {
                 Account Settings
                 </Menu.Item>
             </Menu>
-            <div>
+            {/* <div className="d-flex justify-align-end"> 
             <Avatar size={40}>USER</Avatar>
-            </div>
+            <div style={{position:"absolute" , top: "500px",
+             left: "40px" , fontSize:"20px"}}>Name</div>
+            </div> */}
 
         </> 
     )
