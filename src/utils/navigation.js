@@ -1,30 +1,14 @@
 export const navigation = [
   {
-    label: "User Profile",
-    path: "/user",
-  },
-  {
-    label: "Roles and Privileges",
+    label: "Dashboard",
     path: "/",
   },
   {
-    label: "Sales Regions",
-    path: "/sales",
+    label: "My Profile",
+    path: "/profile",
   },
   {
-    label: "Business Units",
-    path: "/business",
-  },
-  {
-    label: "Facilities",
-    path: "/facilities",
-  },
-  {
-    label: "Currency",
-    path: "/currency",
-  },
-  {
-    label: "Country",
-    path: "/country",
+    label: "My Clients",
+    path: "/clients",
   },
 ];
