@@ -22,25 +22,20 @@ const Profile = () => {
         }
         subTitle="This is a subtitle"
         style={{ backgroundColor: "white" }}
-        footer={
-          <Tabs defaultActiveKey="1" style={{ backgroundColor: "white" }}>
-            <TabPane
-              tab="Personal Details"
-              key="1"
-              style={{ backgroundColor: "gray" }}
-            >
-              {<PerDetail />}
-            </TabPane>
-            <TabPane
-              tab="Job Details"
-              key="2"
-              style={{ backgroundColor: "gray" }}
-            >
-              <JobDetails />
-            </TabPane>
-          </Tabs>
-        }
       ></PageHeader>
+      <Tabs defaultActiveKey="1" style={{ backgroundColor: "white" }}>
+        <TabPane
+          tab="Personal Details"
+          key="1"
+          style={{ backgroundColor: "#ece8e8", marginLeft: "10px" }}
+        >
+          {<PerDetail />}
+        </TabPane>
+        <TabPane tab="Job Details" key="2" style={{ backgroundColor: "gray" }}>
+          <JobDetails />
+        </TabPane>
+      </Tabs>
+      }
     </>
   );
 };
