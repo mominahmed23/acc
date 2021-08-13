@@ -27,7 +27,7 @@ const SideBar = () => {
         width: "260px",
         flexShrink: "0",
         position: "static",
-        maxHeight: "100%",
+        maxHeight: "100vh",
       }}
     >
       <Typography.Title level={4} className="text-center">
@@ -57,7 +57,9 @@ const SideBar = () => {
           title="Time Tracking"
         >
           <Menu.ItemGroup key="g1">
-            <Menu.Item key="1">Time Logs</Menu.Item>
+            <Link to="timelog">
+              <Menu.Item key="1">Time Logs</Menu.Item>
+            </Link>
           </Menu.ItemGroup>
         </Menu.SubMenu>
         {/* {navigation.map((val, index) => (

@@ -22,7 +22,7 @@ const AccountSetting = () => {
             <TabPane
               tab="Legal Setting"
               key="1"
-              style={{ backgroundColor: "gray" }}
+              style={{ backgroundColor: "#ece8e8" }}
             >
               {<LegalSetting />}
             </TabPane>
