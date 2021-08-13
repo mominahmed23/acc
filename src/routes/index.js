@@ -4,6 +4,7 @@ import Dashboard from "../pages/Dashboard";
 import NotFound from "../pages/NotFound";
 import MyProfile from "./../pages/MyProfile";
 import AccountSetting from "./../pages/AccountSetting";
+import MyPayment from "./../pages/MyPayment";
 import Layout from "./../components/Layout/index";
 
 const Routes = () => {
@@ -14,6 +15,7 @@ const Routes = () => {
           <Route path="/" exact component={Dashboard} />
           <Route path="/profile" component={MyProfile} />
           <Route path="/accountsetting" component={AccountSetting} />
+          <Route path="/mypayments" component={MyPayment} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

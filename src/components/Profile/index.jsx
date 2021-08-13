@@ -32,11 +32,15 @@ const Profile = () => {
         <TabPane
           tab="Personal Details"
           key="1"
-          style={{ backgroundColor: "gray" }}
+          style={{ backgroundColor: "#ece8e8", marginLeft: "10px" }}
         >
           {<PersonalDetails />}
         </TabPane>
-        <TabPane tab="Job Details" key="2" style={{ backgroundColor: "gray" }}>
+        <TabPane
+          tab="Job Details"
+          key="2"
+          style={{ backgroundColor: "#ece8e8", marginLeft: "10px" }}
+        >
           <JobDetails />
         </TabPane>
       </Tabs>

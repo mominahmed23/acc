@@ -1,0 +1,21 @@
+.head {
+  position: "relative";
+  padding: 20px;
+  background-color: white;
+}
+
+.editicon {
+  right: 29px;
+  position: absolute;
+  top: 31px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.card-container {
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 10%;
+  width: 95%;
+}

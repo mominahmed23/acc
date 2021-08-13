@@ -70,7 +70,7 @@ const SideBar = () => {
         </Menu.Item>
         <hr style={{ width: "220px" }} />
         <Menu.Item key="6" icon={<CalendarOutlined />}>
-          <Link to="/payments"> My Payments</Link>
+          <Link to="/mypayments"> My Payments</Link>
         </Menu.Item>
         <Menu.Item key="7" icon={<BellOutlined />}>
           <Link to="/notification"> Notifications(100)</Link>
