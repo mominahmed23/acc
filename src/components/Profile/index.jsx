@@ -6,7 +6,7 @@ import { Tabs } from "antd";
 import PersonalDetails from "./PersonalDetails";
 import PerDetail from "./PerDetail";
 import JobDetails from "./JobDetails";
-
+import "./Profile.css";
 const { TabPane } = Tabs;
 const Profile = () => {
   return (
@@ -31,7 +31,11 @@ const Profile = () => {
             >
               {<PerDetail />}
             </TabPane>
-            <TabPane tab="Job Details" key="2">
+            <TabPane
+              tab="Job Details"
+              key="2"
+              style={{ backgroundColor: "gray" }}
+            >
               <JobDetails />
             </TabPane>
           </Tabs>

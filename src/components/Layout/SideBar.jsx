@@ -55,7 +55,7 @@ const SideBar = () => {
           Notifications(100)
         </Menu.Item>
         <Menu.Item key="8" icon={<CalendarOutlined />}>
-          Account Settings
+          <Link to="/accountsetting">Account Settings</Link>
         </Menu.Item>
         <div className="d-flex side-bar-logo">
           <div>
