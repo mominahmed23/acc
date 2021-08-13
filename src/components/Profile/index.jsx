@@ -11,28 +11,20 @@ const Profile = () => {
   return (
     <>
       <PageHeader
-        className="site-page-header-responsive"
+        // className="site-page-header-responsive"
         title="Rishabh Jain"
         avatar={{}}
         style={{ backgroundColor: "white" }}
-        footer={
-          <Tabs defaultActiveKey="1" style={{ backgroundColor: "white" }}>
-            <TabPane
-              tab="Personal Details"
-              key="1"
-              style={{ backgroundColor: "#ece8e8" }}
-            >
-              {<PersonalDetails />}
-            </TabPane>
-            <TabPane
-              tab="Job Details"
-              key="2"
-              style={{ backgroundColor: "#ece8e8" }}
-            >
-              <JobDetails />
-            </TabPane>
-          </Tabs>
-        }
+        // footer={
+        //   <Tabs defaultActiveKey="1" style={{ backgroundColor: "white" }}>
+        //     <TabPane tab="Personal Details" key="1">
+        //       {<PersonalDetails />}
+        //     </TabPane>
+        //     <TabPane tab="Job Details" key="2">
+        //       <JobDetails />
+        //     </TabPane>
+        //   </Tabs>
+        // }
       >
         {/* <div>
           <Avatar>RJ</Avatar>
@@ -41,6 +33,15 @@ const Profile = () => {
           <Text strong>Consultant | Contractor</Text>
         </div>
       </PageHeader>
+
+      <Tabs defaultActiveKey="1" style={{ backgroundColor: "white" }}>
+        <TabPane tab="Personal Details" key="1">
+          {<PersonalDetails />}
+        </TabPane>
+        <TabPane tab="Job Details" key="2">
+          <JobDetails />
+        </TabPane>
+      </Tabs>
     </>
   );
 };

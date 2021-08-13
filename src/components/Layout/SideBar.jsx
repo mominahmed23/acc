@@ -28,6 +28,7 @@ const SideBar = () => {
         flexShrink: "0",
         position: "static",
         maxHeight: "100vh",
+        borderRight: "2px solid #eeeeee",
       }}
     >
       <Typography.Title level={4} className="text-center">
