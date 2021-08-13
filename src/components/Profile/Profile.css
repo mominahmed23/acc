@@ -19,3 +19,8 @@
   margin-right: 10%;
   width: 95%;
 }
+.sub-heading {
+  left: 41px;
+  position: relative;
+  bottom: 15px;
+}
