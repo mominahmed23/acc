@@ -16,48 +16,63 @@ function PerDetail() {
             <div className="mt-5">
               <Row gutter={16}>
                 <Col span={8}>
-                  <div className>
-                    <Text type="secondary">Full Name</Text>
-                    <br></br>
-                    <Text strong>Ali Raza</Text>
-                  </div>
-                  <div className="mt-8">
-                    <Text type="secondary">Full Name</Text>
-                    <br></br>
-                    <Text strong>Ali Raza</Text>
-                  </div>
-                  <div className="mt-8">
-                    <Text type="secondary">Full Name</Text>
-                    <br></br>
-                    <Text strong>Ali Raza</Text>
-                  </div>
-                </Col>
-                <Col span={8}>
-                  <div className>
-                    <Text type="secondary">Gender Name</Text>
-                    <br></br>
-                    <Text strong>Male</Text>
-                  </div>
-                  <div className="mt-8">
-                    <Text type="secondary">Contact Number</Text>
-                    <br></br>
-                    <Text strong>Ali Raza</Text>
-                  </div>
-                  <div className="mt-8">
-                    <Text type="secondary">Aadhaar Number</Text>
-                    <br></br>
-                    <Text strong>Ali Raza</Text>
+                  <div>
+                    <div>
+                      <Text type="secondary">Full Name</Text>
+                    </div>
+                    <div className="mb-8">
+                      <Text strong>Ali Raza</Text>
+                    </div>
+                    <div>
+                      <Text type="secondary">Full Name</Text>
+                    </div>
+                    <div className="mb-8">
+                      <Text strong>Ali Raza</Text>
+                    </div>
+                    <div>
+                      <Text type="secondary">Full Name</Text>
+                    </div>
+                    <div className="mb-4">
+                      <Text strong>Ali Raza</Text>
+                    </div>
                   </div>
                 </Col>
                 <Col span={8}>
-                  <div className>
-                    <Text type="secondary">Brithday</Text>
-                    <br></br>
-                    <Text strong>27th September 1995</Text>
+                  <div>
+                    <div>
+                      <Text type="secondary">Gender</Text>
+                    </div>
+                    <div className="mb-8">
+                      <Text strong>Male</Text>
+                    </div>
+                    <div>
+                      <Text type="secondary">Contact Number</Text>
+                    </div>
+                    <div className="mb-8">
+                      <Text strong>Ali Raza</Text>
+                    </div>
+                    <div>
+                      <Text type="secondary">Adhaar Number</Text>
+                    </div>
+                    <div className="mb-4">
+                      <Text strong>Ali Raza</Text>
+                    </div>
                   </div>
-                  <div className="mt-8">
-                    <Text type="secondary">Alternate Contact Number</Text>
-                    <br></br>
+                </Col>
+                <Col span={8}>
+                  <div>
+                    <div>
+                      <Text type="secondary">Birthday</Text>
+                    </div>
+                    <div className="mb-8">
+                      <Text strong>A27 spetember </Text>
+                    </div>
+                    <div>
+                      <Text type="secondary">Alternate COntact Number</Text>
+                    </div>
+                    <div className="mb-8">
+                      <Text strong>Ali Raza</Text>
+                    </div>
                   </div>
                 </Col>
               </Row>
@@ -65,9 +80,7 @@ function PerDetail() {
           </Card>
         </div>
         <div>
-          <Card style={{ marginTop: "25px", marginLeft: "25px", width: "90%" }}>
-            hello
-          </Card>
+          <Card className="card-container"></Card>
         </div>
         <div>
           {" "}

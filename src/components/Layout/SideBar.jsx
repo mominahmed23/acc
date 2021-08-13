@@ -17,7 +17,7 @@ const SideBar = () => {
         width: "260px",
         flexShrink: "0",
         position: "static",
-        height: "100vh",
+        maxHeight: "100%",
       }}
     >
       <Typography.Title level={4} className="text-center">
@@ -30,6 +30,7 @@ const SideBar = () => {
         defaultSelectedKeys={["1"]}
         defaultOpenKeys={["sub1"]}
         mode="inline"
+        maxHeight="100vh"
       >
         {navigation.map((val, index) => (
           <Menu.Item key={index + 1} icon={<CalendarOutlined />}>

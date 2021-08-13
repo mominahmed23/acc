@@ -5,6 +5,7 @@ import { EditOutlined } from "@ant-design/icons";
 import { Tabs } from "antd";
 import PersonalDetails from "./PersonalDetails";
 import PerDetail from "./PerDetail";
+import JobDetails from "./JobDetails";
 
 const { TabPane } = Tabs;
 const Profile = () => {
@@ -30,7 +31,9 @@ const Profile = () => {
             >
               {<PerDetail />}
             </TabPane>
-            <TabPane tab="Job Details" key="2" />
+            <TabPane tab="Job Details" key="2">
+              <JobDetails />
+            </TabPane>
           </Tabs>
         }
       ></PageHeader>
