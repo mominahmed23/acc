@@ -63,8 +63,8 @@ function PerDetail() {
       </div>
 
       <div
-        style={{ position: "relative", backgroundColor: "#b1bdb4" }}
-        className="site-card-wrapper mt-5"
+        // style={{ position: "relative", backgroundColor: "#b1bdb4" }}
+        className="head site-card-wrapper mt-5"
       >
         <h3>Address Info</h3>
         <EditOutlined
@@ -91,18 +91,12 @@ function PerDetail() {
                 <br></br>
                 <Text strong>Male</Text>
               </div>
-              <div className="mt-8">
-                <Text type="secondary">Contact Number</Text>
-              </div>
             </Col>
           </Row>
         </div>
       </div>
 
-      <div
-        style={{ position: "relative", backgroundColor: "#b1bdb4" }}
-        className="site-card-wrapper mt-5"
-      >
+      <div className="head site-card-wrapper mt-5">
         <h3>Payment Info</h3>
         <EditOutlined
           style={{ position: "absolute", top: "25px", right: "15px" }}
@@ -129,6 +123,8 @@ function PerDetail() {
               </div>
               <div className="mt-8">
                 <Text type="secondary">Contact Number</Text>
+                <br></br>
+                <Text strong>--</Text>
               </div>
             </Col>
             <Col span={8}>
@@ -140,56 +136,18 @@ function PerDetail() {
               <div className="mt-8">
                 <Text type="secondary">Alternate Contact Number</Text>
                 <br></br>
+                <Text strong>--</Text>
               </div>
             </Col>
           </Row>
         </div>
       </div>
 
-      <div
-        style={{ position: "relative", backgroundColor: "#b1bdb4" }}
-        className="site-card-wrapper mt-5"
-      >
-        <h3>Address Info</h3>
-        <EditOutlined
-          className="editicon"
-          style={{ position: "absolute", top: "25px", right: "15px" }}
-        />
-        <div className="mt-5">
-          <Row gutter={16}>
-            <Col span={12}>
-              <div className>
-                <Text type="secondary">Full Name</Text>
-                <br></br>
-                <Text strong>Ali Raza</Text>
-              </div>
-              <div className="mt-8">
-                <Text type="secondary">Full Name</Text>
-                <br></br>
-                <Text strong>Ali Raza</Text>
-              </div>
-            </Col>
-            <Col span={12}>
-              <div className>
-                <Text type="secondary">Gender Name</Text>
-                <br></br>
-                <Text strong>Male</Text>
-              </div>
-              <div className="mt-8">
-                <Text type="secondary">Contact Number</Text>
-              </div>
-            </Col>
-          </Row>
-        </div>
-      </div>
-
-      <div
-        style={{ position: "relative", backgroundColor: "#b1bdb4" }}
-        className="site-card-wrapper mt-5"
-      >
+      <div className="head site-card-wrapper mt-5">
         <h3>Emergency Details</h3>
         <EditOutlined
-          style={{ position: "absolute", top: "25px", right: "15px" }}
+          className="editicon"
+          // style={{ position: "absolute", top: "149px", right: "42px" }}
         />
         <div className="mt-5">
           <Row gutter={16}>

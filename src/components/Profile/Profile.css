@@ -1,7 +1,8 @@
 .head {
   position: "relative";
   padding: 20px;
-  background-color: #b1bdb4;
+  background-color: white;
+  margin: 10px;
 }
 
 .editicon {
