@@ -1,12 +1,9 @@
-import { Button, Col, PageHeader, Row } from "antd";
-import Text from "antd/lib/typography/Text";
+import { PageHeader } from "antd";
 import React from "react";
-import { EditOutlined } from "@ant-design/icons";
 import { Tabs } from "antd";
 import PersonalDetails from "./PersonalDetails";
-import PerDetail from "./PerDetail";
 import JobDetails from "./JobDetails";
-
+import "./Profile.css";
 const { TabPane } = Tabs;
 const Profile = () => {
   return (
@@ -29,9 +26,13 @@ const Profile = () => {
               key="1"
               style={{ backgroundColor: "gray" }}
             >
-              {<PerDetail />}
+              {<PersonalDetails />}
             </TabPane>
-            <TabPane tab="Job Details" key="2">
+            <TabPane
+              tab="Job Details"
+              key="2"
+              style={{ backgroundColor: "gray" }}
+            >
               <JobDetails />
             </TabPane>
           </Tabs>

@@ -43,13 +43,13 @@ const SideBar = () => {
         maxHeight="100vh"
       >
         <Menu.Item key="1" icon={<HomeOutlined />}>
-          Dashboard
+          <Link to="/">Dashboard</Link>
         </Menu.Item>
         <Menu.Item key="2" icon={<UserOutlined />}>
-          Profile
+          <Link to="profile">Profile</Link>
         </Menu.Item>
         <Menu.Item key="3" icon={<UserSwitchOutlined />}>
-          Clients
+          <Link to="clients">Clients</Link>
         </Menu.Item>
         <Menu.SubMenu
           key="4"
@@ -70,14 +70,15 @@ const SideBar = () => {
         </Menu.Item>
         <hr style={{ width: "220px" }} />
         <Menu.Item key="6" icon={<CalendarOutlined />}>
-          My Payments
+          <Link to="/payments"> My Payments</Link>
         </Menu.Item>
         <Menu.Item key="7" icon={<BellOutlined />}>
-          Notifications(100)
+          <Link to="/notification"> Notifications(100)</Link>
         </Menu.Item>
-        <Menu.Item key="8" icon={<SettingOutlined />}>
-          Account Settings
+        <Menu.Item key="8" icon={<CalendarOutlined />}>
+          <Link to="/accountsetting">Account Settings</Link>
         </Menu.Item>
+
         <div className="d-flex side-bar-logo">
           <div>
             <Avatar style={{ color: "#ffffff", backgroundColor: "#dcdc56" }}>
