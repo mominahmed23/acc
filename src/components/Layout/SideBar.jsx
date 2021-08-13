@@ -1,6 +1,16 @@
 import React from "react";
 import { Menu, Typography } from "antd";
-import { MailOutlined, CalendarOutlined } from "@ant-design/icons";
+import {
+  MailOutlined,
+  CalendarOutlined,
+  HomeOutlined,
+  UserOutlined,
+  UserSwitchOutlined,
+  FieldTimeOutlined,
+  FileTextOutlined,
+  BellOutlined,
+  SettingOutlined,
+} from "@ant-design/icons";
 import { navigation } from "./../../utils/navigation";
 import { Link } from "react-router-dom";
 import Avatar from "antd/lib/avatar/avatar";
@@ -32,29 +42,40 @@ const SideBar = () => {
         mode="inline"
         maxHeight="100vh"
       >
-        {navigation.map((val, index) => (
+        <Menu.Item key="1" icon={<HomeOutlined />}>
+          Dashboard
+        </Menu.Item>
+        <Menu.Item key="2" icon={<UserOutlined />}>
+          Profile
+        </Menu.Item>
+        <Menu.Item key="3" icon={<UserSwitchOutlined />}>
+          Clients
+        </Menu.Item>
+        <Menu.SubMenu
+          key="4"
+          icon={<FieldTimeOutlined />}
+          title="Time Tracking"
+        >
+          <Menu.ItemGroup key="g1">
+            <Menu.Item key="1">Time Logs</Menu.Item>
+          </Menu.ItemGroup>
+        </Menu.SubMenu>
+        {/* {navigation.map((val, index) => (
           <Menu.Item key={index + 1} icon={<CalendarOutlined />}>
             <Link to={val.path}>{val.label}</Link>
           </Menu.Item>
-        ))}
-
-        <Menu.SubMenu key="4" icon={<MailOutlined />} title="Time Tracking">
-          <Menu.ItemGroup key="g1" title="Item 1">
-            <Menu.Item key="1">Option 1</Menu.Item>
-            <Menu.Item key="2">Option 2</Menu.Item>
-          </Menu.ItemGroup>
-        </Menu.SubMenu>
-        <Menu.Item key="5" icon={<CalendarOutlined />}>
-          Documents
+        ))} */}
+        <Menu.Item key="5" icon={<FileTextOutlined />}>
+          <Link to="/documents">Documents</Link>
         </Menu.Item>
         <hr style={{ width: "220px" }} />
         <Menu.Item key="6" icon={<CalendarOutlined />}>
           My Payments
         </Menu.Item>
-        <Menu.Item key="7" icon={<CalendarOutlined />}>
+        <Menu.Item key="7" icon={<BellOutlined />}>
           Notifications(100)
         </Menu.Item>
-        <Menu.Item key="8" icon={<CalendarOutlined />}>
+        <Menu.Item key="8" icon={<SettingOutlined />}>
           Account Settings
         </Menu.Item>
         <div className="d-flex side-bar-logo">
