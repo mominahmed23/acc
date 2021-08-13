@@ -4,6 +4,7 @@ import React from "react";
 import { EditOutlined } from "@ant-design/icons";
 import { Tabs } from "antd";
 import PersonalDetails from "./PersonalDetails";
+import PerDetail from "./PerDetail";
 
 const { TabPane } = Tabs;
 const Profile = () => {
@@ -27,7 +28,7 @@ const Profile = () => {
               key="1"
               style={{ backgroundColor: "gray" }}
             >
-              {<PersonalDetails />}
+              {<PerDetail />}
             </TabPane>
             <TabPane tab="Job Details" key="2" />
           </Tabs>

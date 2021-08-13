@@ -1,0 +1,11 @@
+.head {
+  position: "relative";
+  padding: 20px;
+  background-color: #b1bdb4;
+}
+
+.editicon {
+  right: 42px;
+  position: absolute;
+  top: 149px;
+}
