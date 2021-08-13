@@ -29,18 +29,10 @@ const Profile = () => {
         </div>
       </PageHeader>
       <Tabs defaultActiveKey="1" style={{ backgroundColor: "white" }}>
-        <TabPane
-          tab="Personal Details"
-          key="1"
-          style={{ backgroundColor: "#ece8e8", marginLeft: "10px" }}
-        >
+        <TabPane tab="Personal Details" key="1">
           {<PersonalDetails />}
         </TabPane>
-        <TabPane
-          tab="Job Details"
-          key="2"
-          style={{ backgroundColor: "#ece8e8", marginLeft: "10px" }}
-        >
+        <TabPane tab="Job Details" key="2">
           <JobDetails />
         </TabPane>
       </Tabs>

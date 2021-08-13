@@ -14,3 +14,8 @@
   margin-top: 5px;
   margin-left: 25px;
 }
+
+.custom-card .ant-card {
+  border: 2px solid #dbdbdb;
+  border-radius: 4px;
+}

@@ -6,8 +6,8 @@ const Layout = ({ children }) => {
     <div className="d-flex">
       <Sidebar />
       <div
-        style={{ flexGrow: "1", backgroundColor: "gray" }}
-        className="container"
+        style={{ flexGrow: "1", backgroundColor: "#eaeaea" }}
+        className="container px-5 py-10 custom-card"
       >
         {children}
       </div>
