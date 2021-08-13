@@ -207,15 +207,14 @@ function PerDetail() {
               <div className>
                 <Text type="secondary">Gender Name</Text>
                 <br></br>
-                <Text strong>Male</Text>
-              </div>
-              <div className="mt-8">
-                <Text type="secondary">--</Text>
+                <Text strong>--</Text>
               </div>
             </Col>
             <Col span={8}>
               <div className>
                 <Text type="secondary">Brithday</Text>
+                <br></br>
+                <Text strong>--</Text>
               </div>
             </Col>
           </Row>
