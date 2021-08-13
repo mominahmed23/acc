@@ -1,6 +1,16 @@
 import React from "react";
 import { Menu, Typography } from "antd";
-import { MailOutlined, CalendarOutlined } from "@ant-design/icons";
+import {
+  MailOutlined,
+  CalendarOutlined,
+  HomeOutlined,
+  UserOutlined,
+  UserSwitchOutlined,
+  FieldTimeOutlined,
+  FileTextOutlined,
+  BellOutlined,
+  SettingOutlined,
+} from "@ant-design/icons";
 import { navigation } from "./../../utils/navigation";
 import { Link } from "react-router-dom";
 import Avatar from "antd/lib/avatar/avatar";
@@ -32,31 +42,43 @@ const SideBar = () => {
         mode="inline"
         maxHeight="100vh"
       >
-        {navigation.map((val, index) => (
+        <Menu.Item key="1" icon={<HomeOutlined />}>
+          <Link to="/">Dashboard</Link>
+        </Menu.Item>
+        <Menu.Item key="2" icon={<UserOutlined />}>
+          <Link to="profile">Profile</Link>
+        </Menu.Item>
+        <Menu.Item key="3" icon={<UserSwitchOutlined />}>
+          <Link to="clients">Clients</Link>
+        </Menu.Item>
+        <Menu.SubMenu
+          key="4"
+          icon={<FieldTimeOutlined />}
+          title="Time Tracking"
+        >
+          <Menu.ItemGroup key="g1">
+            <Menu.Item key="1">Time Logs</Menu.Item>
+          </Menu.ItemGroup>
+        </Menu.SubMenu>
+        {/* {navigation.map((val, index) => (
           <Menu.Item key={index + 1} icon={<CalendarOutlined />}>
             <Link to={val.path}>{val.label}</Link>
           </Menu.Item>
-        ))}
-
-        <Menu.SubMenu key="4" icon={<MailOutlined />} title="Time Tracking">
-          <Menu.ItemGroup key="g1" title="Item 1">
-            <Menu.Item key="1">Option 1</Menu.Item>
-            <Menu.Item key="2">Option 2</Menu.Item>
-          </Menu.ItemGroup>
-        </Menu.SubMenu>
-        <Menu.Item key="5" icon={<CalendarOutlined />}>
-          Documents
+        ))} */}
+        <Menu.Item key="5" icon={<FileTextOutlined />}>
+          <Link to="/documents">Documents</Link>
         </Menu.Item>
         <hr style={{ width: "220px" }} />
         <Menu.Item key="6" icon={<CalendarOutlined />}>
-          My Payments
+          <Link to="/mypayments"> My Payments</Link>
         </Menu.Item>
-        <Menu.Item key="7" icon={<CalendarOutlined />}>
-          Notifications(100)
+        <Menu.Item key="7" icon={<BellOutlined />}>
+          <Link to="/notification"> Notifications(100)</Link>
         </Menu.Item>
         <Menu.Item key="8" icon={<CalendarOutlined />}>
           <Link to="/accountsetting">Account Settings</Link>
         </Menu.Item>
+
         <div className="d-flex side-bar-logo">
           <div>
             <Avatar style={{ color: "#ffffff", backgroundColor: "#dcdc56" }}>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Profile.css";
+
 import { Card, Col, Row } from "antd";
 import { Typography, Space } from "antd";
 import { EditOutlined } from "@ant-design/icons";
