@@ -7,7 +7,7 @@ const { Content } = Layout;
 
 const Dashboard = () => {
   return (
-    <div className="px-5 py-10">
+    <div className="px-5 py-5">
       <Row gutter={[12, 24]}>
         <Col xs={24} sm={24} md={24} lg={17}>
           <Typography.Title level={5}>Todo</Typography.Title>

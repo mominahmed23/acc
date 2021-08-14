@@ -2,11 +2,11 @@ import React from "react";
 import { Card, Col, Row } from "antd";
 import { Typography, Space } from "antd";
 import { EditOutlined } from "@ant-design/icons";
-const { Text, Link } = Typography;
+const { Text } = Typography;
 
 function PerDetail() {
   return (
-    <div className="px-5 py-10">
+    <div className="py-5">
       <Card className="mb-5">
         <h3>Personal Details</h3>
         <EditOutlined className="editicon" />

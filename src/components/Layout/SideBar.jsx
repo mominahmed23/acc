@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Typography, Layout } from "antd";
+import { Menu, Typography, Layout, Divider } from "antd";
 import {
   CalendarOutlined,
   HomeOutlined,
@@ -27,6 +27,7 @@ const SideBar = () => {
         height: "100vh",
         position: "fixed",
         left: 0,
+        borderRight: "1px solid #eeeeee",
       }}
     >
       <Typography.Title level={4} className="text-center mt-3">
@@ -57,7 +58,7 @@ const SideBar = () => {
         <Menu.Item key="5" icon={<FileTextOutlined />}>
           <Link to="/documents">Documents</Link>
         </Menu.Item>
-        <hr />
+        <Divider />
         <Menu.Item key="6" icon={<CalendarOutlined />}>
           <Link to="/mypayments"> My Payments</Link>
         </Menu.Item>
