@@ -1,8 +1,8 @@
 import { Button, PageHeader } from "antd";
 import React from "react";
 import { Tabs } from "antd";
-import LegalSetting from "./LegalSetting";
 import "./LegalSetting.css";
+import LegalSetting from "./LegalSetting";
 
 const { TabPane } = Tabs;
 const AccountSetting = () => {

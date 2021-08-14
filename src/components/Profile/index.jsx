@@ -11,37 +11,24 @@ const Profile = () => {
   return (
     <>
       <PageHeader
-        // className="site-page-header-responsive"
-        title="Rishabh Jain"
-        avatar={{}}
-        style={{ backgroundColor: "white" }}
-        // footer={
-        //   <Tabs defaultActiveKey="1" style={{ backgroundColor: "white" }}>
-        //     <TabPane tab="Personal Details" key="1">
-        //       {<PersonalDetails />}
-        //     </TabPane>
-        //     <TabPane tab="Job Details" key="2">
-        //       <JobDetails />
-        //     </TabPane>
-        //   </Tabs>
-        // }
-      >
-        {/* <div>
-          <Avatar>RJ</Avatar>
-        </div> */}
-        <div className="sub-heading">
-          <Text strong>Consultant | Contractor</Text>
-        </div>
-      </PageHeader>
-
-      <Tabs defaultActiveKey="1" style={{ backgroundColor: "white" }}>
-        <TabPane tab="Personal Details" key="1">
-          {<PersonalDetails />}
-        </TabPane>
-        <TabPane tab="Job Details" key="2">
-          <JobDetails />
-        </TabPane>
-      </Tabs>
+        ghost={false}
+        className="site-page-header"
+        title="Title"
+        subTitle="This is a subtitle"
+        avatar={{
+          src: "https://avatars1.githubusercontent.com/u/8186664?s=460&v=4",
+        }}
+        footer={
+          <Tabs defaultActiveKey="1">
+            <TabPane tab="Personal Details" key="1">
+              <PersonalDetails />
+            </TabPane>
+            <TabPane tab="Job Details" key="2">
+              <JobDetails />
+            </TabPane>
+          </Tabs>
+        }
+      />
     </>
   );
 };

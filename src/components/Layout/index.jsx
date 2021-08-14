@@ -1,18 +1,15 @@
-import React from "react";
-import Sidebar from "./SideBar";
+import { Layout } from "antd";
+import CustomSidebar from "./SideBar";
 
-const Layout = ({ children }) => {
+const CustomLayout = ({ children }) => {
   return (
-    <div className="d-flex">
-      <Sidebar />
-      <div
-        style={{ flexGrow: "1", backgroundColor: "#eeeeee" }}
-        className="custom-card"
-      >
-        {children}
-      </div>
-    </div>
+    <Layout>
+      <CustomSidebar />
+      <Layout style={{ marginLeft: 260 }}>
+        <Layout.Content style={{ minHeight: 360 }}>{children}</Layout.Content>
+      </Layout>
+    </Layout>
   );
 };
 
-export default Layout;
+export default CustomLayout;

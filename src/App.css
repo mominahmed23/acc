@@ -1,21 +1,7 @@
-.side-bar-logo {
-  position: absolute;
-  bottom: 14px;
-  /* flex-grow: 2; */
-  /* padding: 11px; */
-  margin-left: 20px;
-}
-.side-bar-logo-text {
-  margin-left: 25px;
-  margin-top: 15px;
-}
-.side-bar-logo-button {
-  font-size: 20px;
-  margin-top: 5px;
-  margin-left: 25px;
-}
-
 .custom-card .ant-card {
   border: 2px solid #dbdbdb;
   border-radius: 4px;
+}
+.custom-nav .ant-menu {
+  border-right: none;
 }
