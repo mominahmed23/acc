@@ -70,13 +70,13 @@ const SideBar = () => {
         <Menu.Item key="8" icon={<CalendarOutlined />}>
           <Link to="/accountsetting">Account Settings</Link>
         </Menu.Item>
-        {/* <Menu.Item></Menu.Item> */}
-        <Menu.Item>
+
+        {/* <Menu.Item>
           {" "}
           <Avatar>RJ</Avatar>
           <Text>Rishab Jain</Text>
           <HomeOutlined />
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
     </Sider>
   );
