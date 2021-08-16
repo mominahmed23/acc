@@ -18,7 +18,7 @@ export default function TimeLog() {
       <Timelog />
               </TabPane>
               <TabPane tab="My Requests" key="2">
-
+              <Myrequests/>
               </TabPane>
               <TabPane tab="Timesheet" key="3">
                     
