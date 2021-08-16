@@ -1,33 +1,10 @@
-.head {
-  position: "relative";
-  padding: 20px;
-  background-color: white;
-}
-
-.editicon {
-  right: 29px;
-  position: absolute;
-  top: 31px;
-}
-.main-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #ece8e8;
-}
-.card-container {
-  margin-top: 25px;
-  margin-left: 20px;
-  margin-right: 10%;
-  width: 95%;
-}
-
-.searchh{
+.searchh {
   width: 20%;
   border-radius: 20px;
   padding: 5px;
 }
 
-.topheader{
+.topheader {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
