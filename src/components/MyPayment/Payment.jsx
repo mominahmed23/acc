@@ -93,7 +93,7 @@ export default function Payment() {
               <div>
                     {/* <Divider /> */}
                     <Col lg={24}  sm={24} xs={24} md={24}>
-                      <Table style={{border:'1px solid'}}
+                      <Table style={{border:'0.001px solid'}}
                         rowSelection={{
                           type: selectionType,
                           ...rowSelection,
