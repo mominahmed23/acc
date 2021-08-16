@@ -93,7 +93,6 @@ export default function Payment() {
           <Col lg={24} sm={24} xs={24} md={24}>
             <Table
               pagination={false}
-              style={{ border: "1px solid" }}
               rowSelection={{
                 type: selectionType,
                 ...rowSelection,
