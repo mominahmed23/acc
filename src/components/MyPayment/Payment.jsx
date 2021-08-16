@@ -1,10 +1,9 @@
-import { Card, Col, Row } from "antd";
-import { Typography, Space } from "antd";
+import { Card, Col, Row , Input} from "antd";
+import { Typography, Space , button} from "antd";
 import React, { useState } from "react";
 import { Table, Radio, Divider } from "antd";
-import { EditOutlined } from "@ant-design/icons";
+import { EditOutlined , UserOutlined , SearchOutlined, FilterOutlined} from "@ant-design/icons";
 const { Text, Link } = Typography;
-
 const columns = [
   {
     title: "Client",
@@ -39,25 +38,25 @@ const columns = [
 const data = [
   {
     key: "1",
-    name: "John Brown",
+    name: "Ali Raza",
     age: 32,
     address: "New York No. 1 Lake Park",
   },
   {
     key: "2",
-    name: "Jim Green",
+    name: "Ali Raza",
     age: 42,
     address: "London No. 1 Lake Park",
   },
   {
     key: "3",
-    name: "Joe Black",
+    name: "Ali Raza",
     age: 32,
     address: "Sidney No. 1 Lake Park",
   },
   {
     key: "4",
-    name: "Disabled User",
+    name: "Ali Raza",
     age: 99,
     address: "Sidney No. 1 Lake Park",
   },
@@ -72,7 +71,7 @@ const rowSelection = {
     );
   },
   getCheckboxProps: (record) => ({
-    disabled: record.name === "Disabled User",
+    //disabled: record.name === "Disabled User",
     // Column configuration not to be checked
     name: record.name,
   }),
@@ -81,28 +80,30 @@ export default function Payment() {
   const [selectionType, setSelectionType] = useState("checkbox");
   return (
     <>
-      <div className="main-container">
+     <div className="px-5 py-10">
         <div>
-          <Card className="card-container">
-            <h3>Entity Details</h3>
-            <div className="mt-5">
-              <Row gutter={16}>
-                <Col span={24}>
-                  <div>
-                    <Divider />
-
-                    <Table
-                      rowSelection={{
-                        type: selectionType,
-                        ...rowSelection,
-                      }}
-                      columns={columns}
-                      dataSource={data}
-                    />
-                  </div>
-                </Col>
-              </Row>
-            </div>
+          <Card style={{backgroundColor:'#F0F0F0'}}>
+            <Row>
+              <Col lg={24}  sm={24} xs={24} md={24}>
+                <div className="mb-5 topheader">
+                  <Input className='searchh' placeholder="Search" prefix={<SearchOutlined />} />
+                  <FilterOutlined />
+                </div>
+              </Col>
+              <div>
+                    {/* <Divider /> */}
+                    <Col lg={24}  sm={24} xs={24} md={24}>
+                      <Table style={{border:'1px solid'}}
+                        rowSelection={{
+                          type: selectionType,
+                          ...rowSelection,
+                        }}
+                        columns={columns}
+                        dataSource={data}
+                      />
+                    </Col>
+              </div>
+            </Row>
           </Card>
         </div>
       </div>
