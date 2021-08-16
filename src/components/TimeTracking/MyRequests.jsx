@@ -10,11 +10,11 @@ export default function MyRequests() {
           dataIndex: 'name',
         },
         {
-          title: 'Invo',
+          title: 'Invoice No',
           dataIndex: 'age',
         },
         {
-          title: 'Address',
+          title: 'Status',
           dataIndex: 'address',
         },
       ];
@@ -42,15 +42,20 @@ export default function MyRequests() {
     return (
         <div>
             
-              <Row justify="center space-between" className="px-6">
+              {/* <Row justify="center space-between" className="px-6">
       <Col><Avatar icon={<LeftOutlined/>}></Avatar></Col>
       <Col><h3>Aug,2021</h3></Col>
       <Col><Avatar icon={<RightOutlined/>}></Avatar></Col>
       
-    </Row>
+    </Row> */}
+    <div className="d-flex align-center justify-center"  style={{backgroundColor:'#bdb7b7'}}>
+    <div><Avatar icon={<LeftOutlined/>}></Avatar></div>
+    <div className="mr-3 ml-3 mt-3 " ><h3>Aug,2021</h3></div>
+    <div><Avatar icon={<RightOutlined/>}></Avatar></div>
+    </div>
     
    
-    <Table columns={columns} dataSource={data} size="middle" />
+    <Table pagination={false} style={{border:'0.5px solid '}} columns={columns} dataSource={data} size="middle" />
    
   
         </div>

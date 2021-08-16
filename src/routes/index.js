@@ -5,6 +5,7 @@ import NotFound from "../pages/NotFound";
 import MyProfile from "./../pages/MyProfile";
 import TimeLog from "../pages/PageTimeLog";
 import AccountSetting from "./../pages/AccountSetting";
+import Document from "./../pages/Document";
 import MyPayment from "./../pages/MyPayment";
 import Layout from "./../components/Layout/index";
 
@@ -18,6 +19,7 @@ const Routes = () => {
           <Route path="/accountsetting" component={AccountSetting} />
           <Route path="/timelog" component={TimeLog} />
           <Route path="/mypayments" component={MyPayment} />
+          <Route path="/documents" component={Document} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
