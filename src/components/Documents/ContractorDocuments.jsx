@@ -1,8 +1,69 @@
-import { Card, Col, Collapse, Row, Typography } from "antd";
+import { Alert, Card, Col, Collapse, Row, Typography } from "antd";
 import React from "react";
 import { PlusOutlined } from "@ant-design/icons";
+import { Table } from "antd";
+import { useState } from "react";
 const { Panel } = Collapse;
 const ContractorDocuments = () => {
+  const [selectionType, setSelectionType] = useState("checkbox");
+  const columns = [
+    {
+      title: "Client",
+      dataIndex: "name",
+      render: (text) => <a>{text}</a>,
+    },
+    {
+      title: "Invoice",
+      dataIndex: "age",
+    },
+    {
+      title: "Invoice Date",
+      dataIndex: "address",
+    },
+    {
+      title: "Amount",
+      dataIndex: "address",
+    },
+    {
+      title: "Paid Amount",
+      dataIndex: "address",
+    },
+    {
+      title: "Status",
+      dataIndex: "address",
+    },
+    {
+      title: "---",
+      dataIndex: "address",
+    },
+  ];
+  const data = [
+    {
+      key: "1",
+      name: "Ali Raza",
+      age: 32,
+      address: "New York No. 1 Lake Park",
+    },
+    {
+      key: "2",
+      name: "Ali Raza",
+      age: 42,
+      address: "London No. 1 Lake Park",
+    },
+  ];
+
+  const rowSelection = {
+    onChange: (selectedRowKeys, selectedRows) => {
+      console.log(
+        `selectedRowKeys: ${selectedRowKeys}`,
+        "selectedRows: ",
+        selectedRows
+      );
+    },
+    getCheckboxProps: (record) => ({
+      name: record.name,
+    }),
+  };
   return (
     <>
       <div
@@ -31,8 +92,11 @@ const ContractorDocuments = () => {
             <Panel
               header={<Typography.Title level={5}>KYC</Typography.Title>}
               key="1"
+              extra={
+                <Alert message="Informational Notes" type="info" showIcon />
+              }
             >
-              <div></div>
+              <Table pagination={false} columns={columns} dataSource={data} />
             </Panel>
           </Collapse>
         </Col>
