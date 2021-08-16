@@ -5,3 +5,8 @@
 .custom-nav .ant-menu {
   border-right: none;
 }
+.menu-bar-bottom-logo {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}

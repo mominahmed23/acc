@@ -7,7 +7,7 @@ const { Text, Link } = Typography;
 
 const JobDetails = () => {
   return (
-    <div className="px-5 py-10">
+    <div className="py-5">
       <Card className="mb-5">
         <h3>Job Details</h3>
         <EditOutlined className="editicon" />

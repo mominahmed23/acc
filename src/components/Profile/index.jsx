@@ -13,10 +13,13 @@ const Profile = () => {
       <PageHeader
         ghost={false}
         className="site-page-header"
-        title="Title"
-        subTitle="This is a subtitle"
+        title="Rishab Jain"
         avatar={{
-          src: "https://avatars1.githubusercontent.com/u/8186664?s=460&v=4",
+          // src: "https://avatars1.githubusercontent.com/u/8186664?s=460&v=4",
+          size: "large",
+          title: "RJ",
+          Text: "RJ",
+          alt: "RJ",
         }}
         footer={
           <Tabs defaultActiveKey="1">
@@ -28,7 +31,11 @@ const Profile = () => {
             </TabPane>
           </Tabs>
         }
-      />
+      >
+        <div className="sub-heading">
+          <Text type="strong">Contructor | Consultant</Text>
+        </div>
+      </PageHeader>
     </>
   );
 };

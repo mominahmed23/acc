@@ -5,7 +5,7 @@ const CustomLayout = ({ children }) => {
   return (
     <Layout>
       <CustomSidebar />
-      <Layout style={{ marginLeft: 260 }}>
+      <Layout style={{ marginLeft: 250 }}>
         <Layout.Content style={{ minHeight: 360 }}>{children}</Layout.Content>
       </Layout>
     </Layout>

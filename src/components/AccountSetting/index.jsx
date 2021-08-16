@@ -9,21 +9,17 @@ const AccountSetting = () => {
   return (
     <>
       <PageHeader
-        className="site-page-header-responsive"
-        title="Account Setting"
+        ghost={false}
+        className="site-page-header"
+        title="Account Settings"
         extra={[
           <Button style={{ color: "red" }} key="1">
             Reset Password
           </Button>,
         ]}
-        style={{ backgroundColor: "white" }}
         footer={
           <Tabs defaultActiveKey="1" style={{ backgroundColor: "white" }}>
-            <TabPane
-              tab="Legal Setting"
-              key="1"
-              style={{ backgroundColor: "#ece8e8" }}
-            >
+            <TabPane tab="Legal Setting" key="1">
               {<LegalSetting />}
             </TabPane>
           </Tabs>

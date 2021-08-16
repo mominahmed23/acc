@@ -11,6 +11,8 @@ import {
 } from "@ant-design/icons";
 
 import { Link } from "react-router-dom";
+import Avatar from "antd/lib/avatar/avatar";
+import Text from "antd/lib/typography/Text";
 
 const { Sider } = Layout;
 
@@ -19,8 +21,8 @@ const SideBar = () => {
     <Sider
       className="custom-nav"
       theme="light"
-      width={260}
-      breakpoint="lg"
+      width={250}
+      breakpoint="md"
       collapsedWidth="0"
       style={{
         overflowX: "hidden",
@@ -67,6 +69,13 @@ const SideBar = () => {
         </Menu.Item>
         <Menu.Item key="8" icon={<CalendarOutlined />}>
           <Link to="/accountsetting">Account Settings</Link>
+        </Menu.Item>
+        {/* <Menu.Item></Menu.Item> */}
+        <Menu.Item>
+          {" "}
+          <Avatar>RJ</Avatar>
+          <Text>Rishab Jain</Text>
+          <HomeOutlined />
         </Menu.Item>
       </Menu>
     </Sider>

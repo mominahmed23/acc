@@ -7,178 +7,207 @@ const { Text, Link } = Typography;
 function LegalSetting() {
   return (
     <>
-      <div className="main-container">
-        <div>
-          <Card className="card-container">
-            <h3>Entity Details</h3>
-            <EditOutlined className="editicon" />
-            <div className="mt-5">
-              <Row gutter={16}>
-                <Col span={8}>
+      <div className="py-5">
+        <Card className="mb-5">
+          <h3>Personal Details</h3>
+          <EditOutlined className="editicon" />
+          <div className="mt-5">
+            <Row gutter={16}>
+              <Col span={8}>
+                <div>
                   <div>
-                    <div>
-                      <Text type="secondary">Full Name</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>-</Text>
-                    </div>
-                    <div>
-                      <Text type="secondary">Full Name</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
+                    <Text type="secondary">Full Name</Text>
                   </div>
-                </Col>
-                <Col span={8}>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
                   <div>
-                    <div>
-                      <Text type="secondary">Gender</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Male</Text>
-                    </div>
+                    <Text type="secondary">Full Name</Text>
                   </div>
-                </Col>
-                <Col span={8}>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
                   <div>
-                    <div>
-                      <Text type="secondary">Birthday</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>A27 spetember </Text>
-                    </div>
+                    <Text type="secondary">Full Name</Text>
                   </div>
-                </Col>
-              </Row>
-            </div>
-          </Card>
-        </div>
+                  <div className="mb-4">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+              <Col span={8}>
+                <div>
+                  <div>
+                    <Text type="secondary">Gender</Text>
+                  </div>
+                  <div className="mb-8">
+                    <Text strong>Male</Text>
+                  </div>
+                  <div>
+                    <Text type="secondary">Contact Number</Text>
+                  </div>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                  <div>
+                    <Text type="secondary">Adhaar Number</Text>
+                  </div>
+                  <div className="mb-4">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+              <Col span={8}>
+                <div>
+                  <div>
+                    <Text type="secondary">Birthday</Text>
+                  </div>
+                  <div className="mb-8">
+                    <Text strong>A27 spetember </Text>
+                  </div>
+                  <div>
+                    <Text type="secondary">Alternate COntact Number</Text>
+                  </div>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Card>
 
-        <div>
-          <Card className="card-container">
-            <h3>Additional Details</h3>
-            <EditOutlined className="editicon" />
-            <div className="mt-5">
-              <Row gutter={16}>
-                <Col span={8}>
+        <Card className="mb-5">
+          <h3>Address Info</h3>
+          <EditOutlined className="editicon" />
+          <div className="mt-5">
+            <Row gutter={16}>
+              <Col span={12}>
+                <div>
                   <div>
-                    <div>
-                      <Text type="secondary">Full Name</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
-                    <div>
-                      <Text type="secondary">Full Name</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
-                    <div>
-                      <Text type="secondary">Full Name</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
+                    <Text type="secondary">Full Name</Text>
                   </div>
-                </Col>
-                <Col span={8}>
+                  <div className="mb-4">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+              <Col span={12}>
+                <div>
                   <div>
-                    <div>
-                      <Text type="secondary">Contact Number</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
-                    <div>
-                      <Text type="secondary">Adhaar Number</Text>
-                    </div>
-                    <div className="mb-4">
-                      <Text strong>Ali Raza</Text>
-                    </div>
-                    <div>
-                      <Text type="secondary">Full Name</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
+                    <Text type="secondary">Adhaar Number</Text>
                   </div>
-                </Col>
-                <Col span={8}>
-                  <div>
-                    <div>
-                      <Text type="secondary">Birthday</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>A27 spetember </Text>
-                    </div>
-                    <div>
-                      <Text type="secondary">Alternate COntact Number</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
+                  <div className="mb-4">
+                    <Text strong>Ali Raza</Text>
                   </div>
-                </Col>
-              </Row>
-            </div>
-          </Card>
-        </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Card>
 
-        <div>
-          <Card className="card-container">
-            <h3>Address Details</h3>
-            <EditOutlined className="editicon" />
-            <div className="mt-5">
-              <Row gutter={16}>
-                <Col span={8}>
+        <Card className="mb-5">
+          <h3>Payment Info</h3>
+          <EditOutlined className="editicon" />
+          <div className="mt-5">
+            <Row gutter={16}>
+              <Col span={8}>
+                <div>
                   <div>
-                    <div>
-                      <Text type="secondary">Full Name</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
-                    <div>
-                      <Text type="secondary">Full Name</Text>
-                    </div>
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
+                    <Text type="secondary">Full Name</Text>
                   </div>
-                </Col>
-                <Col span={8}>
-                  <div>
-                    <div>
-                      <Text type="secondary">Adhaar Number</Text>
-                    </div>
-                    <div className="mb-4">
-                      <Text strong>Ali Raza</Text>
-                    </div>
-                    <div>
-                      <Text type="secondary">Adhaar Number</Text>
-                    </div>
-                    <div className="mb-4">
-                      <Text strong>Ali Raza</Text>
-                    </div>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
                   </div>
-                </Col>
-                <Col span={8}>
                   <div>
-                    <div>
-                      <Text type="secondary">Birthday</Text>
-                    </div>
+                    <Text type="secondary">Full Name</Text>
+                  </div>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+              <Col span={8}>
+                <div>
+                  <div>
+                    <Text type="secondary">Contact Number</Text>
+                  </div>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                  <div>
+                    <Text type="secondary">Adhaar Number</Text>
+                  </div>
+                  <div className="mb-4">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+              <Col span={8}>
+                <div>
+                  <div>
+                    <Text type="secondary">Birthday</Text>
+                  </div>
+                  <div className="mb-8">
+                    <Text strong>A27 spetember </Text>
+                  </div>
+                  <div>
+                    <Text type="secondary">Alternate COntact Number</Text>
+                  </div>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Card>
 
-                    <div className="mb-8">
-                      <Text strong>Ali Raza</Text>
-                    </div>
+        <Card className="mb-5">
+          <h3>Emergency Details</h3>
+          <EditOutlined className="editicon" />
+          <div className="mt-5">
+            <Row gutter={16}>
+              <Col span={8}>
+                <div>
+                  <div>
+                    <Text type="secondary">Full Name</Text>
                   </div>
-                </Col>
-              </Row>
-            </div>
-          </Card>
-        </div>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                  <div>
+                    <Text type="secondary">Full Name</Text>
+                  </div>
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+              <Col span={8}>
+                <div>
+                  <div>
+                    <Text type="secondary">Adhaar Number</Text>
+                  </div>
+                  <div className="mb-4">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+              <Col span={8}>
+                <div>
+                  <div>
+                    <Text type="secondary">Birthday</Text>
+                  </div>
+
+                  <div className="mb-8">
+                    <Text strong>Ali Raza</Text>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Card>
       </div>
     </>
   );
