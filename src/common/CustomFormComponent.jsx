@@ -3,21 +3,24 @@ import { Button, Input, Select, Typography } from "antd";
 import TextArea from "antd/lib/input/TextArea";
 const { Text } = Typography;
 export const CustomInput = (props) => {
+  const { Label, ...rest } = props;
+  console.log("testingg", rest);
   return (
     <div>
       <div>
-        <label>{props.Label}</label>
+        <label>{Label}</label>
 
-        <Input {...props} />
+        <Input {...rest} />
       </div>
     </div>
   );
 };
 export const CustomSelect = (props) => {
-  const { items } = props;
+  const { Label, items } = props;
+
   return (
     <div>
-      <label>{props.Label}</label>
+      <label>{Label}</label>
       <Select style={{ width: "100%" }}>
         {items.map((i) => (
           <Select.Option value={i} />
@@ -28,19 +31,20 @@ export const CustomSelect = (props) => {
 };
 
 export const CustomTextarea = (props) => {
+  const { Label, ...rest } = props;
   return (
     <div>
-      <label>{props.Label}</label>
-      <TextArea {...props} />
+      <label>{Label}</label>
+      <TextArea {...rest} />
     </div>
   );
 };
 export const CustomButton = (props) => {
-  const { BgColor, Color } = props;
+  const { BgColor, Color, ...rest } = props;
   return (
     <div>
       <Button
-        {...props}
+        {...rest}
         block
         style={{
           backgroundColor: `${BgColor}`,
