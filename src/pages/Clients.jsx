@@ -1,10 +1,11 @@
 import React from "react";
 import Clients from "../components/Clients";
 
-export default function Client() {
+const ClientPage = () => {
   return (
     <div>
       <Clients />
     </div>
   );
-}
+};
+export default ClientPage;

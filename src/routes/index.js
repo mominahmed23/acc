@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Dashboard from "../pages/Dashboard";
+import DashboardPage from "../pages/Dashboard";
 import NotFound from "../pages/NotFound";
-import MyProfile from "./../pages/MyProfile";
-import TimeLog from "../pages/PageTimeLog";
-import AccountSetting from "./../pages/AccountSetting";
-import Document from "./../pages/Document";
-import MyPayment from "./../pages/MyPayment";
-import Clients from "./../pages/Clients";
+import MyProfilePage from "./../pages/MyProfile";
+import TimeLogPage from "../pages/TimeLog";
+import AccountSettingPage from "./../pages/AccountSetting";
+import DocumentPage from "./../pages/Document";
+import MyPaymentPage from "./../pages/MyPayment";
+import ClientsPage from "./../pages/Clients";
 import Layout from "./../components/Layout/index";
 
 const Routes = () => {
@@ -15,13 +15,13 @@ const Routes = () => {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route path="/" exact component={Dashboard} />
-          <Route path="/profile" component={MyProfile} />
-          <Route path="/accountsetting" component={AccountSetting} />
-          <Route path="/timelog" component={TimeLog} />
-          <Route path="/mypayments" component={MyPayment} />
-          <Route path="/Clients" component={Clients} />
-          <Route path="/documents" component={Document} />
+          <Route path="/" exact component={DashboardPage} />
+          <Route path="/profile" component={MyProfilePage} />
+          <Route path="/accountsetting" component={AccountSettingPage} />
+          <Route path="/timelog" component={TimeLogPage} />
+          <Route path="/mypayments" component={MyPaymentPage} />
+          <Route path="/Clients" component={ClientsPage} />
+          <Route path="/documents" component={DocumentPage} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

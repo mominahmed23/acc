@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Col, Input, Row, Select, Typography } from "antd";
 import TextArea from "antd/lib/input/TextArea";
+import { AccInput } from "../../common/AccInput";
 export default function TimeLog() {
   return (
     <div className="px-2 py-3">
@@ -16,10 +17,11 @@ export default function TimeLog() {
           <label>Project *</label> <Select style={{ width: "100%" }} />
         </Col>
         <Col xs={24} md={24} lg={12}>
-          {" "}
-          <label>Select Date *</label>
-          <Input disabled placeholder="Select Date" />
+          <AccInput />
         </Col>
+        {/* {" "}
+          <label>Select Date *</label>
+          <Input disabled placeholder="Select Date" /> */}
         <Col xs={24} md={24} lg={12}>
           {" "}
           <label> Time(Hours) *</label>

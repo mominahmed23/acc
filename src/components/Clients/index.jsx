@@ -2,7 +2,7 @@ import React from "react";
 import { Button, PageHeader } from "antd";
 import Client from "./Client";
 import "./Client.css";
-export default function MyPayment() {
+const MyPayment = () => {
   return (
     <>
       <PageHeader
@@ -13,4 +13,5 @@ export default function MyPayment() {
       ></PageHeader>
     </>
   );
-}
+};
+export default MyPayment;

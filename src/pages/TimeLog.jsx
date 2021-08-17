@@ -1,10 +1,11 @@
 import React from "react";
 import TimeLogs from "../components/TimeTracking";
 
-export default function TimeLog() {
+const TimeLogPage = () => {
   return (
     <div>
       <TimeLogs />
     </div>
   );
-}
+};
+export default TimeLogPage;
