@@ -17,8 +17,15 @@ const PerDetail = () => {
     Gender: "male",
     contactNumber: "1234",
     addharNumber: "5678",
+    Gender2: "male",
+    contactNumber2: "1234",
+    addharNumber2: "5678",
+    Gender3: "male",
+    contactNumber3: "1234",
+    addharNumber3: "5678",
+    
   };
-
+  
   return (
     <div className="py-5">
       <Card className="mb-5">
