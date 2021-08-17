@@ -8,7 +8,18 @@ export const CustomInput = (props) => {
       <div>
         <label>{props.Label}</label>
 
-        <Input {...props} />
+        <Input {...props} handleBlur={() => console.log("blur")} />
+      </div>
+    </div>
+  );
+};
+export const CustomInputCard = (props) => {
+  return (
+    <div>
+      <div>
+        <label className="ml-2">{props.Label}</label>
+
+        <Input {...props} handleBlur={() => console.log("blur")} />
       </div>
     </div>
   );

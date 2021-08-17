@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import { Card, Col, Input, Row } from "antd";
 import { Typography, Space } from "antd";
-import { EditOutlined } from "@ant-design/icons";
+import { EditOutlined, CheckOutlined } from "@ant-design/icons";
 import ClientPage from "../../pages/Clients";
 import CustomCardInputs from "../../common/CustomCardInputs";
+import CusomCardInputEnabled from "../../common/CusomCardInputEnabled";
 const { Text } = Typography;
 
 const PerDetail = () => {
-  const [disableState, setDisableState] = useState(true);
-  const onEditCLick = () => {
-    setDisableState(false);
-    console.log(disableState);
-  };
+  const [inputState, setInputState] = useState(false);
 
   const dataObj = {
     Gender: "male",
@@ -23,42 +20,34 @@ const PerDetail = () => {
     <div className="py-5">
       <Card className="mb-5">
         <h3>Personal Details</h3>
-        <EditOutlined className="editicon" onClick={onEditCLick} />
+
+        {inputState ? (
+          <CheckOutlined
+            className="editicon"
+            onClick={() => setInputState(false)}
+          />
+        ) : (
+          <EditOutlined
+            className="editicon"
+            onClick={() => setInputState(true)}
+          />
+        )}
+
         <div className="mt-5">
           <Row gutter={16}>
             <Col span={8}>
-              <div>
-                <Text type="secondary" className="ml-3">
-                  Full Name
-                </Text>
-              </div>
-              <div className="mb-8">
-                <Input
-                  className=""
-                  type="text"
-                  value="ALi Raza"
-                  // defaultValue={"Ali Raza"}
-                  bordered={false}
-                  disabled={disableState}
-                  onBlur={() => setDisableState(true)}
-                ></Input>
-                {/* <Text strong>Ali Raza</Text> */}
-              </div>
-              <div>
-                <Text type="secondary">Full Name</Text>
-              </div>
-              <div className="mb-8">
-                <Text strong>Ali Raza</Text>
-              </div>
-              <div>
-                <Text type="secondary">Full Name</Text>
-              </div>
-              <div className="mb-4">
-                <Text strong>Ali Raza</Text>
-              </div>
+              {inputState ? (
+                <CusomCardInputEnabled dataObj={dataObj} />
+              ) : (
+                <CustomCardInputs dataObj={dataObj} />
+              )}
             </Col>
             <Col span={8}>
-              <CustomCardInputs dataObj={dataObj} />
+              {inputState ? (
+                <CusomCardInputEnabled dataObj={dataObj} />
+              ) : (
+                <CustomCardInputs dataObj={dataObj} />
+              )}
             </Col>
             <Col span={8}>
               <div>
