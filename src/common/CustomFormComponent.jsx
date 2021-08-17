@@ -14,10 +14,15 @@ export const CustomInput = (props) => {
   );
 };
 export const CustomSelect = (props) => {
+  const { items } = props;
   return (
     <div>
       <label>{props.Label}</label>
-      <Select style={{ width: "100%" }} {...props} />
+      <Select style={{ width: "100%" }}>
+        {items.map((i) => (
+          <Select.Option value={i} />
+        ))}
+      </Select>
     </div>
   );
 };
@@ -31,14 +36,15 @@ export const CustomTextarea = (props) => {
   );
 };
 export const CustomButton = (props) => {
+  const { BgColor, Color } = props;
   return (
     <div>
       <Button
         {...props}
         block
         style={{
-          backgroundColor: "#b5050e",
-          color: "white",
+          backgroundColor: `${BgColor}`,
+          color: `${Color}`,
           borderRadius: "5px",
         }}
       />

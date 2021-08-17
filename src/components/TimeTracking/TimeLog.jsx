@@ -16,10 +16,10 @@ export default function TimeLog() {
         </Col>
         <Col xs={24} md={24} lg={12}>
           {" "}
-          <CustomSelect Label={"Clients *"} />
+          <CustomSelect Label={"Clients *"} items={["ali", "asad"]} />
         </Col>
         <Col xs={24} md={24} lg={12}>
-          <CustomSelect Label={"Project *"} />
+          <CustomSelect Label={"Project *"} items={["ali", "asad"]} />
         </Col>
         <Col xs={24} md={24} lg={12}>
           {" "}
@@ -39,7 +39,9 @@ export default function TimeLog() {
           <CustomTextarea Label={"Task Details *"} />
         </Col>
         <Col xs={24} md={24} sm={24} lg={4}>
-          <CustomButton>SAVE</CustomButton>
+          <CustomButton BgColor={"#c21807"} Color={"white"}>
+            SAVE
+          </CustomButton>
         </Col>
       </Row>
     </div>
