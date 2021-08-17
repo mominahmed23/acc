@@ -27,6 +27,8 @@ export default function TimeLog() {
             disabled
             Label={"Select Date *"}
             placeholder="Select Date"
+            name={"date"}
+            value={"ali"}
           />
         </Col>
         {/* {" "}
