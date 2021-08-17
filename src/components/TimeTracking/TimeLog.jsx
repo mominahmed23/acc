@@ -1,7 +1,12 @@
 import React from "react";
 import { Button, Col, Input, Row, Select, Typography } from "antd";
 import TextArea from "antd/lib/input/TextArea";
-import { AccInput } from "../../common/AccInput";
+import {
+  CustomButton,
+  CustomInput,
+  CustomSelect,
+  CustomTextarea,
+} from "../../common/CustomFormComponent";
 export default function TimeLog() {
   return (
     <div className="px-2 py-3">
@@ -10,38 +15,34 @@ export default function TimeLog() {
           <Typography.Title level={5}>Add Time Log</Typography.Title>
         </Col>
         <Col xs={24} md={24} lg={12}>
-          <label className="mb-5">Clients *</label>{" "}
-          <Select style={{ width: "100%" }} />
+          {" "}
+          <CustomSelect Label={"Clients *"} />
         </Col>
         <Col xs={24} md={24} lg={12}>
-          <label>Project *</label> <Select style={{ width: "100%" }} />
+          <CustomSelect Label={"Project *"} />
         </Col>
         <Col xs={24} md={24} lg={12}>
-          <AccInput />
+          {" "}
+          <CustomInput
+            disabled
+            Label={"Select Date *"}
+            placeholder="Select Date"
+          />
         </Col>
         {/* {" "}
           <label>Select Date *</label>
           <Input disabled placeholder="Select Date" /> */}
         <Col xs={24} md={24} lg={12}>
           {" "}
-          <label> Time(Hours) *</label>
-          <Input />
+          {/* <label> Time(Hours) *</label>
+          <Input /> */}
+          <CustomInput Label={"Time(Hours)"} />
         </Col>
         <Col xs={24} md={24} sm={24} lg={24}>
-          <label>Task Details *</label>
-          <TextArea />
+          <CustomTextarea Label={"Task Details *"} />
         </Col>
         <Col xs={24} md={24} sm={24} lg={4}>
-          <Button
-            style={{
-              backgroundColor: "#b5050e",
-              color: "white",
-              borderRadius: "5px",
-            }}
-            block
-          >
-            SAVE
-          </Button>
+          <CustomButton>SAVE</CustomButton>
         </Col>
       </Row>
     </div>
