@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Col, Row, Input } from "antd";
 import { Table } from "antd";
 import { SearchOutlined, FilterOutlined } from "@ant-design/icons";
+import  PaymentInvoice from "./PaymentInvoice"
 
 const columns = [
   {
@@ -77,7 +78,7 @@ export default function Payment() {
   const [selectionType, setSelectionType] = useState("checkbox");
   return (
     <>
-      <Row>
+      {false?<Row>
         <Card style={{ backgroundColor: "#F0F0F0" }}>
           <Col lg={24} sm={24} xs={24} md={24}>
             <div className="mb-5 topheader">
@@ -102,7 +103,8 @@ export default function Payment() {
             />
           </Col>
         </Card>
-      </Row>
+      </Row>:<PaymentInvoice/>
+      }
     </>
   );
 }

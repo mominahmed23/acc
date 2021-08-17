@@ -4,7 +4,7 @@ const CustomCardInputs = ({ dataObj }) => {
   const dataEntries = Object.entries(dataObj);
   return (
     <div>
-      {dataEntries.slice(0,3).map((item) => (
+      {dataEntries.map((item) => (
         <>
           <div>
             <Text type="secondary">{item[0]}</Text>

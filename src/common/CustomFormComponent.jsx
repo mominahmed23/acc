@@ -31,7 +31,7 @@ export const CustomSelect = (props) => {
   return (
     <div>
       <label>{Label}</label>
-      <Select style={{ width: "100%" }}>
+      <Select placeholder={props.placeholder} style={{ width: "100%" }}>
         {items.map((i) => (
           <Select.Option value={i} />
         ))}

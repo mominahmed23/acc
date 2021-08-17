@@ -10,7 +10,7 @@ export default function TimeLog() {
     <>
       <PageHeader
         className="site-page-header-responsive"
-        title="Payments"
+        title="Time Logs"
         style={{ backgroundColor: "white" }}
         footer={
           <Tabs defaultActiveKey="1">
