@@ -16,11 +16,12 @@ export const CustomInput = (props) => {
   );
 };
 export const CustomInputCard = (props) => {
+  const { Label, ...rest } = props;
   return (
     <div>
       <div>
-        <label className="ml-2">{props.Label}</label>
-        <Input {...props} />
+        <label className="ml-2">{Label}</label>
+        <Input {...rest} />
       </div>
     </div>
   );
