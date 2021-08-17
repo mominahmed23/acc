@@ -10,7 +10,7 @@ import { Table, Avatar } from "antd";
 
 const { Column } = Table;
 
-export default function Client() {
+const Client = () => {
   const [selectionType, setSelectionType] = useState("checkbox");
   const data = [
     {
@@ -115,4 +115,5 @@ export default function Client() {
       </Card>
     </>
   );
-}
+};
+export default Client;

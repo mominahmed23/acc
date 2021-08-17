@@ -29,6 +29,9 @@ export default function TimeLog() {
             placeholder="Select Date"
           />
         </Col>
+        {/* {" "}
+          <label>Select Date *</label>
+          <Input disabled placeholder="Select Date" /> */}
         <Col xs={24} md={24} lg={12}>
           {" "}
           {/* <label> Time(Hours) *</label>

@@ -1,60 +1,64 @@
-import React from "react";
-import { Card, Col, Row } from "antd";
+import React, { useState } from "react";
+import { Card, Col, Input, Row } from "antd";
 import { Typography, Space } from "antd";
 import { EditOutlined } from "@ant-design/icons";
+import ClientPage from "../../pages/Clients";
+import CustomCardInputs from "../../common/CustomCardInputs";
 const { Text } = Typography;
 
-function PerDetail() {
+const PerDetail = () => {
+  const [disableState, setDisableState] = useState(true);
+  const onEditCLick = () => {
+    setDisableState(false);
+    console.log(disableState);
+  };
+
+  const dataObj = {
+    Gender: "male",
+    contactNumber: "1234",
+    addharNumber: "5678",
+  };
+
   return (
     <div className="py-5">
       <Card className="mb-5">
         <h3>Personal Details</h3>
-        <EditOutlined className="editicon" />
+        <EditOutlined className="editicon" onClick={onEditCLick} />
         <div className="mt-5">
           <Row gutter={16}>
             <Col span={8}>
               <div>
-                <div>
-                  <Text type="secondary">Full Name</Text>
-                </div>
-                <div className="mb-8">
-                  <Text strong>Ali Raza</Text>
-                </div>
-                <div>
-                  <Text type="secondary">Full Name</Text>
-                </div>
-                <div className="mb-8">
-                  <Text strong>Ali Raza</Text>
-                </div>
-                <div>
-                  <Text type="secondary">Full Name</Text>
-                </div>
-                <div className="mb-4">
-                  <Text strong>Ali Raza</Text>
-                </div>
+                <Text type="secondary" className="ml-3">
+                  Full Name
+                </Text>
+              </div>
+              <div className="mb-8">
+                <Input
+                  className=""
+                  type="text"
+                  value="ALi Raza"
+                  // defaultValue={"Ali Raza"}
+                  bordered={false}
+                  disabled={disableState}
+                  onBlur={() => setDisableState(true)}
+                ></Input>
+                {/* <Text strong>Ali Raza</Text> */}
+              </div>
+              <div>
+                <Text type="secondary">Full Name</Text>
+              </div>
+              <div className="mb-8">
+                <Text strong>Ali Raza</Text>
+              </div>
+              <div>
+                <Text type="secondary">Full Name</Text>
+              </div>
+              <div className="mb-4">
+                <Text strong>Ali Raza</Text>
               </div>
             </Col>
             <Col span={8}>
-              <div>
-                <div>
-                  <Text type="secondary">Gender</Text>
-                </div>
-                <div className="mb-8">
-                  <Text strong>Male</Text>
-                </div>
-                <div>
-                  <Text type="secondary">Contact Number</Text>
-                </div>
-                <div className="mb-8">
-                  <Text strong>Ali Raza</Text>
-                </div>
-                <div>
-                  <Text type="secondary">Adhaar Number</Text>
-                </div>
-                <div className="mb-4">
-                  <Text strong>Ali Raza</Text>
-                </div>
-              </div>
+              <CustomCardInputs dataObj={dataObj} />
             </Col>
             <Col span={8}>
               <div>
@@ -209,6 +213,6 @@ function PerDetail() {
       </Card>
     </div>
   );
-}
+};
 
 export default PerDetail;

@@ -1,10 +1,11 @@
 import React from "react";
 import AccountSetting from "../components/AccountSetting";
 
-export default function AccountSet() {
+const AccountSettingPage = () => {
   return (
     <div>
       <AccountSetting />
     </div>
   );
-}
+};
+export default AccountSettingPage;

@@ -1,10 +1,11 @@
 import React from "react";
 import MyPayment from "../components/MyPayment";
 
-export default function MyPaymentSection() {
+const MyPaymentPage = () => {
   return (
     <div>
       <MyPayment />
     </div>
   );
-}
+};
+export default MyPaymentPage;

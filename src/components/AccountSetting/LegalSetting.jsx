@@ -4,7 +4,7 @@ import { Typography, Space } from "antd";
 import { EditOutlined } from "@ant-design/icons";
 const { Text, Link } = Typography;
 
-function LegalSetting() {
+const LegalSetting = () => {
   return (
     <>
       <div className="py-5">
@@ -211,6 +211,6 @@ function LegalSetting() {
       </div>
     </>
   );
-}
+};
 
 export default LegalSetting;
