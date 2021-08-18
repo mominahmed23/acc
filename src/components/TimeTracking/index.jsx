@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, PageHeader, Tabs } from "antd";
+import { PageHeader, Tabs } from "antd";
 import Timelog from "./TimeLog";
 import Myrequests from "./MyRequests";
 import Timesheet from "./TimeSheet";
@@ -9,7 +9,7 @@ export default function TimeLog() {
   return (
     <>
       <PageHeader
-        className="site-page-header-responsive"
+        className=" tabl site-page-header-responsive"
         title="Time Logs"
         style={{ backgroundColor: "white" }}
         footer={

@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Col, Input, Row, Select, Typography } from "antd";
-import TextArea from "antd/lib/input/TextArea";
+import { Col, Row, Typography } from "antd";
 import {
   CustomButton,
   CustomInput,

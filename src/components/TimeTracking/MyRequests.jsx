@@ -1,4 +1,3 @@
-import { Col, Row } from "antd";
 import { Table } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
 import React from "react";

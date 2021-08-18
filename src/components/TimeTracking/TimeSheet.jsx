@@ -2,7 +2,6 @@ import { Button, Select, Col, Row } from "antd";
 import { Table } from "antd";
 import Avatar from "antd/lib/avatar/avatar";
 import {
-  CustomButton,
   CustomInput,
   CustomSelect,
   CustomTextarea,
@@ -11,16 +10,12 @@ import React from "react";
 import {
   LeftOutlined,
   RightOutlined,
-  UserOutlined,
-  DownOutlined,
   DeleteOutlined,
   PlusOutlined,
 } from "@ant-design/icons";
-import { useState } from "react";
 const { Column } = Table;
 
 export default function TimeSheet() {
-  const [selectionType, setSelectionType] = useState("checkbox");
   const data = [
     {
       key: "1",
@@ -29,10 +24,17 @@ export default function TimeSheet() {
     {
       key: "2",
       firstName: "12 aug 2021 Friday",
-      lastName: <CustomSelect  placeholder="Select" items={["ali", "asad"]} />,
-      age:  <CustomTextarea Label='.' />,
+      lastName: <CustomSelect placeholder="Select" items={["ali", "asad"]} />,
+      age: <CustomTextarea Label="." />,
       address: <DeleteOutlined />,
-      tag:<CustomInput disabled placeholder="Hours" name={"date"} value={"Hours"} />,
+      tag: (
+        <CustomInput
+          disabled
+          placeholder="Hours"
+          name={"date"}
+          value={"Hours"}
+        />
+      ),
     },
     {
       key: "3",
@@ -42,56 +44,51 @@ export default function TimeSheet() {
       key: "4",
       firstName: "Brown",
       lastName: <CustomSelect placeholder="Select" items={["ali", "asad"]} />,
-      age:  <CustomTextarea Label='.' />,
+      age: <CustomTextarea Label="." />,
       address: <DeleteOutlined />,
-      tag:<CustomInput disabled placeholder="Hours" name={"date"} value={"Hours"} />,
-      
+      tag: (
+        <CustomInput
+          disabled
+          placeholder="Hours"
+          name={"date"}
+          value={"Hours"}
+        />
+      ),
     },
-    
   ];
-  const rowSelection = {
-    onChange: (selectedRowKeys, selectedRows) => {
-      console.log(
-        `selectedRowKeys: ${selectedRowKeys}`,
-        "selectedRows: ",
-        selectedRows
-      );
-    },
-    getCheckboxProps: (record) => ({
-      name: record.name,
-    }),
-  };
+
   return (
     <div>
       {/* <div className="d-flex align-center justify-space-between my-4"> */}
-        <Row>
-          <Col lg={10} xs={10} md={10} sm={10}>
-            <div>
-              <Select
-                style={{ width: 200 , borderRadius:'70px' }}
-                placeholder="Select a person"
-                optionFilterProp="children"
-              >
-                <Select.Option value="jack">Jack</Select.Option>
-                <Select.Option value="lucy">Lucy</Select.Option>
-                <Select.Option value="tom">Tom</Select.Option>
-              </Select>
-            </div>
-          </Col>
-          <Col lg={11} xs={11} md={11} sm={11}>
-            <div className="d-flex align-center">
-              <Avatar icon={<LeftOutlined />}></Avatar>
-              <h3 className="mx-5">Aug 5,21 - Aug 5,21</h3>
-              <Avatar icon={<RightOutlined />}></Avatar>
+      <Row>
+        <Col lg={10} xs={10} md={10} sm={10}>
+          <div>
+            <Select
+              style={{ width: 200, borderRadius: "70px" }}
+              placeholder="Select a person"
+              optionFilterProp="children"
+            >
+              <Select.Option value="jack">Jack</Select.Option>
+              <Select.Option value="lucy">Lucy</Select.Option>
+              <Select.Option value="tom">Tom</Select.Option>
+            </Select>
           </div>
-          </Col>
-          <Col lg={3}xs={3} md={3} sm={3}>
-            <div>
-             <Button style={{ color: "red" }}>Current Week</Button>
-            </div>
-          </Col>
-        </Row><br></br>
-        {/* <div>
+        </Col>
+        <Col lg={11} xs={11} md={11} sm={11}>
+          <div className="d-flex align-center">
+            <Avatar icon={<LeftOutlined />}></Avatar>
+            <h3 className="mx-5">Aug 5,21 - Aug 5,21</h3>
+            <Avatar icon={<RightOutlined />}></Avatar>
+          </div>
+        </Col>
+        <Col lg={3} xs={3} md={3} sm={3}>
+          <div>
+            <Button style={{ color: "red" }}>Current Week</Button>
+          </div>
+        </Col>
+      </Row>
+      <br></br>
+      {/* <div>
           <Select
             style={{ width: 200 , borderRadius:'70px' }}
             placeholder="Select a person"

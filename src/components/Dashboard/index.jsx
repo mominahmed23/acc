@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  BellOutlined,
-  CheckCircleTwoTone,
-  PrinterOutlined,
-} from "@ant-design/icons";
-import { Layout, Typography, Row, Col, Avatar, Space, Box, Card } from "antd";
+import { BellOutlined, PrinterOutlined } from "@ant-design/icons";
+import { Typography, Row, Col, Avatar, Card } from "antd";
 import { Calendar, Select, Image } from "antd";
-import { Text } from "antd/lib/typography/Text";
 import { Line } from "@ant-design/charts";
-const { Content } = Layout;
 
 const Dashboard = () => {
   const data = [
