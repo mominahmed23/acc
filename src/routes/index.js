@@ -7,6 +7,7 @@ import TimeLogPage from "../pages/TimeLog";
 import AccountSettingPage from "./../pages/AccountSetting";
 import DocumentPage from "./../pages/Document";
 import MyPaymentPage from "./../pages/MyPayment";
+import Notification from "./../pages/Notification";
 import ClientsPage from "./../pages/Clients";
 import Layout from "./../components/Layout/index";
 
@@ -22,6 +23,8 @@ const Routes = () => {
           <Route path="/mypayments" component={MyPaymentPage} />
           <Route path="/Clients" component={ClientsPage} />
           <Route path="/documents" component={DocumentPage} />
+          <Route path="/notification" component={Notification} />
+          /notification
           <Route component={NotFound} />
         </Switch>
       </Layout>

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Card, Col, Input, Row } from "antd";
-import { Typography, Space } from "antd";
+import { Card, Col, Row } from "antd";
+import { Typography } from "antd";
 import { EditOutlined, CheckOutlined } from "@ant-design/icons";
-import ClientPage from "../../pages/Clients";
 import CustomCardInputs from "../../common/CustomCardInputs";
 import CusomCardInputEnabled from "../../common/CusomCardInputEnabled";
 const { Text } = Typography;
@@ -14,9 +13,8 @@ const PerDetail = () => {
     Gender: "male",
     contactNumber: "1234",
     addharNumber: "5678",
-    
   };
-  
+
   return (
     <div className="py-5">
       <Card className="mb-5">

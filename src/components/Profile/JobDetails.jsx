@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Card, Col, Row } from "antd";
-import { Typography, Space } from "antd";
+import { Typography } from "antd";
 import { EditOutlined } from "@ant-design/icons";
-const { Text, Link } = Typography;
+const { Text } = Typography;
 
 const JobDetails = () => {
   return (

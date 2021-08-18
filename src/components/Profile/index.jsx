@@ -4,7 +4,6 @@ import { Tabs } from "antd";
 import PersonalDetails from "./PersonalDetails";
 import JobDetails from "./JobDetails";
 import "./Profile.css";
-import Avatar from "antd/lib/avatar/avatar";
 import Text from "antd/lib/typography/Text";
 const { TabPane } = Tabs;
 const Profile = () => {
