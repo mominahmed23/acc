@@ -14,7 +14,7 @@ const MyPayment = () => {
   return (
     <>
       <PageHeader
-        className="site-page-header-responsive"
+        className="tabl site-page-header-responsive"
         title="Payments"
         extra={[
           <Button

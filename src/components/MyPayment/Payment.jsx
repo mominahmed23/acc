@@ -76,9 +76,13 @@ const rowSelection = {
 };
 export default function Payment() {
   const [selectionType, setSelectionType] = useState("checkbox");
+  const [payment, setPayment] = useState(true);
+  const handleClick = (e) => {
+    setPayment(e);
+  };
   return (
     <>
-      {false ? (
+      {payment ? (
         <Row>
           <Card style={{ backgroundColor: "#F0F0F0" }}>
             <Col lg={24} sm={24} xs={24} md={24}>
@@ -88,7 +92,7 @@ export default function Payment() {
                   placeholder="Search"
                   prefix={<SearchOutlined />}
                 />
-                <FilterOutlined />
+                <FilterOutlined onClick={() => handleClick(false)} />
               </div>
             </Col>
 
@@ -106,7 +110,7 @@ export default function Payment() {
           </Card>
         </Row>
       ) : (
-        <PaymentInvoice />
+        <PaymentInvoice handleClick={handleClick} />
       )}
     </>
   );
