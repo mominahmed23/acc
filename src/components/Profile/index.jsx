@@ -6,6 +6,14 @@ import JobDetails from "./JobDetails";
 import "./Profile.css";
 import Text from "antd/lib/typography/Text";
 const { TabPane } = Tabs;
+
+const a = {
+  // src: "https://avatars1.githubusercontent.com/u/8186664?s=460&v=4",
+  size: "large",
+  title: "RJ",
+  Text: "RJ",
+  alt: "RJ",
+};
 const Profile = () => {
   return (
     <>
@@ -13,13 +21,7 @@ const Profile = () => {
         ghost={false}
         className="site-page-header"
         title="Rishab Jain"
-        avatar={{
-          // src: "https://avatars1.githubusercontent.com/u/8186664?s=460&v=4",
-          size: "large",
-          title: "RJ",
-          Text: "RJ",
-          alt: "RJ",
-        }}
+        avatar={a}
         footer={
           <Tabs defaultActiveKey="1">
             <TabPane tab="Personal Details" key="1">
