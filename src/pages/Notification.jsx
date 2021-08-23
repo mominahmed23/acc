@@ -1,11 +1,17 @@
 import React from "react";
-import Notification from "../components/Notification";
+import { PageHeader } from "antd";
+import Notification from "./../components/Notification/Notification";
 
 const Notificationn = () => {
   return (
-    <div>
-      <Notification />
-    </div>
+    <>
+      <PageHeader
+        className="site-page-header-responsive"
+        title="My Notification(100)"
+        style={{ backgroundColor: "white" }}
+        footer={<Notification />}
+      ></PageHeader>
+  </>
   );
 };
 
