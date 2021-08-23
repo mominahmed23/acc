@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Col, Row } from "antd";
 import { Typography } from "antd";
 import { EditOutlined } from "@ant-design/icons";
+import "./LegalSetting.css";
 const { Text } = Typography;
 
 const LegalSetting = () => {
